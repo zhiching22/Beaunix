@@ -1,0 +1,88 @@
+*{box-sizing: border-box}
+body, table{
+    border: 1px solid black;
+    margin: 0px;
+}
+header, nav, section, aside,footer{
+    border: 3px solid black;
+    text-align: center;
+    font-family:sans-serif;
+    padding: 10px;
+}
+header{
+    width: 100%;
+    float: left;
+    background-color:darkred;
+    height: 120px;
+    text-align: left;
+}
+nav{
+    width: 20%;
+    float: left;
+    height: 400px;
+    background-color: bisque;
+}
+section{
+    width: 60%;
+    float:left;
+    height: 400px;
+    background-color: antiquewhite;
+}
+aside{
+    width: 20%;
+    float: left;
+    height: 400px;
+}
+footer{
+    width: 100%;
+    clear: left;
+}
+#logoA{
+    margin: 1px;
+    float: left;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+@media only screen and (max-width:800px){
+    section{
+        width: 80%;
+    }
+    aside{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:500px){
+    nav, section, aside{
+        width: 100%;
+    }
+}
+a{
+    color: coral;
+    display: block;
+    text-decoration: none;
+    padding-top: 15px;
+    border-bottom: 1px solid white;
+    margin-left: 30px;
+    text-align: left;
+}
+a:link{
+    color: darkgoldenrod;
+}
+a:hover{
+    text-shadow: 2px 2px 2px red;
+    background-color:burlywood;
+    border-radius: 18px 0px 0px 18px;
+    color: white;
+    transition: 0.8s;
+    transform: translate(5px);
+    padding-left: 10px;
+}
+a:visited{
+    color:darkgoldenrod;
+}
+a:active{
+    box-shadow: 5px 5px 10px black;
+}
